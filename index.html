@@ -180,7 +180,13 @@
 </div>
 </footer>
     <script src="/js/jquery-2.1.0.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <script type="text/javascript">
+//highlight
+$(window).load(function(){
+ $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   prettyPrint();
+ })
 $(document).ready(function(){ 
   $('.navbar').click(function(){
     $('header nav').toggleClass('shownav');
